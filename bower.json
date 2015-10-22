@@ -1,0 +1,30 @@
+{
+  "name": "AdminTemplate",
+  "authors": [
+    "Filipe Silva <filipe.silva@sata.pt>"
+  ],
+  "description": "An experimental template with material design and AngularJs",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "Material",
+    "design",
+    "AngularJs",
+    "Bootstrap",
+    "admin",
+    "template"
+  ],
+  "license": "MIT",
+  "homepage": "http://fsilva.info",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "bootstrap-sass-official#~3.3.5"
+  }
+}
