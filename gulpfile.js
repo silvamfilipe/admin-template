@@ -13,7 +13,8 @@ var rename = require('gulp-rename');
 // definitios
 var config = {
     sassPath: './resources/sass',
-    bowerDir: './bower_components'
+    bowerDir: './bower_components',
+    jsVendor: './js/vendor'
 };
 
 // file paths for copy file
@@ -28,15 +29,48 @@ var filePaths = {
             to: config.sassPath + "/bootstrap"
         },
         {
+            from: config.bowerDir + "/material-shadows/material-shadows.scss",
+            to: config.sassPath + "/material-shadows/_material-shadows.scss"
+        },
+        {
             from: config.bowerDir + "/bootstrap-sass/assets/stylesheets/bootstrap/mixins/*.*",
             to: config.sassPath + "/bootstrap/mixins"
         },
         {
             from: config.bowerDir + "/bootstrap-sass/assets/fonts/bootstrap/*.*",
             to: "./fonts"
+        },
+        {
+            from: config.bowerDir + "/jquery/dist/*.*",
+            to: config.jsVendor + "/jquery"
+        },
+        {
+            from: config.bowerDir + "/bootstrap-sass/assets/javascripts/*.*",
+            to: config.jsVendor
+        },
+        {
+            from: config.bowerDir + "/bootstrap-sass/assets/javascripts/bootstrap/*.*",
+            to: config.jsVendor + "/bootstrap"
+        },
+        {
+            from: config.bowerDir + "/angular/*.js",
+            to: config.jsVendor + "/angular"
+        },
+        {
+            from: config.bowerDir + "/angular/*.js.*",
+            to: config.jsVendor + "/angular"
+        },
+        {
+            from: config.bowerDir + "/angular-bootstrap/ui-bootstrap-tpls.min.js",
+            to: config.jsVendor + "/angular-bootstrap"
+        },
+        {
+            from: config.bowerDir + "/angular-ui-router/release/*.js",
+            to: config.jsVendor + "/angular-ui-router"
         }
     ]
 };
+//angular-bootstrap/ui-bootstrap-tpls.min.js
 
 // file copy task
 gulp.task('fileCopy', ['bower'], function () {
@@ -55,7 +89,7 @@ gulp.task('bower', function () {
 
 // Sass compile task
 gulp.task('css', function () {
-    return gulp.src(config.sassPath + '/style.scss')
+    return gulp.src(config.sassPath + '/styles.scss')
      .pipe(sass({
             style: 'compressed',
             loadPath: [
@@ -79,4 +113,4 @@ gulp.task('watch', function () {
 });
 
 // Default task
-gulp.task('default', ['bower', 'css']);
+gulp.task('default', ['fileCopy', 'css']);

@@ -25,6 +25,10 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap-sass": "bootstrap-sass-official#~3.3.5"
+    "bootstrap-sass": "bootstrap-sass-official#~3.3.5",
+    "angular": "~1.4.7",
+    "angular-bootstrap": "~0.14.2",
+    "angular-ui-router": "~0.2.15",
+    "material-shadows": "~2.0.2"
   }
 }
