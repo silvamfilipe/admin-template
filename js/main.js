@@ -15,7 +15,7 @@ var materialAdmin = angular.module('materialAdmin', [
 materialAdmin
 
     // Home page
-    .controller('materialadminCtrl', ['$scope', '$state', '$log', function($scope, $state, $log) {
+    .controller('materialadminCtrl', ['$scope', '$state', function($scope, $state) {
         var mobileRegEx = new RegExp('/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i');
     
         // Detact Mobile Browser
@@ -33,10 +33,7 @@ materialAdmin
         $scope.layoutType = localStorage.getItem('ma-layout-status');
         
         //Close sidebar on click
-        $scope.sidebarStat = function(event) {
-            $log.info('sidebar event: ');
-            $log.log(event);
-            
+        $scope.sidebarStat = function(event) {        
             if (!angular.element(event.target).parent().hasClass('active')) {
                 $scope.sidebarToggle.left = false;
             }
@@ -62,6 +59,40 @@ materialAdmin
 
         $scope.closeSearch = function(){
             angular.element('#header').removeClass('search-toggled');
+        }
+        
+        //Fullscreen View
+        $scope.fullScreen = function() {
+            //Launch
+            function launchIntoFullscreen(element) {
+                if(element.requestFullscreen) {
+                    element.requestFullscreen();
+                } else if(element.mozRequestFullScreen) {
+                    element.mozRequestFullScreen();
+                } else if(element.webkitRequestFullscreen) {
+                    element.webkitRequestFullscreen();
+                } else if(element.msRequestFullscreen) {
+                    element.msRequestFullscreen();
+                }
+            }
+
+            //Exit
+            function exitFullscreen() {
+                if(document.exitFullscreen) {
+                    document.exitFullscreen();
+                } else if(document.mozCancelFullScreen) {
+                    document.mozCancelFullScreen();
+                } else if(document.webkitExitFullscreen) {
+                    document.webkitExitFullscreen();
+                }
+            }
+
+            if (exitFullscreen()) {
+                launchIntoFullscreen(document.documentElement);
+            }
+            else {
+                launchIntoFullscreen(document.documentElement);
+            }
         }
     }])
 ;

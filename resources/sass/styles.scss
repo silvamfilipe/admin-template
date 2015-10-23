@@ -22,16 +22,34 @@
 /*
  * Vendors
  */
-@import 'material-shadows/material-shadows';
-@import 'waves/waves';
+@import "material-shadows/material-shadows";
+@import "waves/waves";
 
 /*
  * Load Website related SCSS files
  */
-@import 'inc/generics';
-@import 'inc/bootstrap-overrides';
-@import 'inc/base';
-@import 'inc/header';
-@import 'inc/sidebar';
-@import 'inc/dropdown';
+@import "inc/generics";
+@import "inc/bootstrap-overrides";
+@import "inc/base";
+@import "inc/header";
+@import "inc/sidebar";
+@import "inc/dropdown";
+@import "inc/listview";
+@import "inc/progress-bar";
+@import "inc/chat";
+@import "inc/tabs";
+@import "inc/card";
+@import "inc/chart";
+@import 'inc/misc';
 @import "inc/ie-warning";
+
+@import 'inc/print';
+
+/*
+ * Vendor Overrides
+ */
+@import "inc/vendor-overrides/mediaelement";
+@import "inc/vendor-overrides/fullcalendar";
+@import "inc/vendor-overrides/bootstrap-chosen";
+@import 'inc/vendor-overrides/waves';
+@import "inc/vendor-overrides/ui-bootstrap";

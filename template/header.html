@@ -8,7 +8,7 @@
     </li>
 
     <li class="logo hidden-xs">
-        <a data-ui-sref="home" data-ng-click="sidebarStat($event)">Material Admin {{ layoutSS }}</a>
+        <a data-ui-sref="home" data-ng-click="sidebarStat($event)">My Application</a>
     </li>
 
     <li class="pull-right">
@@ -148,11 +148,15 @@
                     </div>
                 </div>
             </li>
+            
+            <li class="hidden-xs" data-target="chat" data-toggle-sidebar data-model-right="sidebarToggle.right" data-ng-class="{ 'open': sidebarToggle.right === true }">
+                <a class="tm-chat" href=""></a>
+            </li>
             <li class="dropdown" uib-dropdown>
                 <a uib-dropdown-toggle class="tm-settings" href=""></a>
                 <ul class="dropdown-menu dm-icon pull-right">
                     <li class="hidden-xs">
-                        <a data-ng-click="hctrl.fullScreen()" href=""><i class="zmdi zmdi-fullscreen"></i> Toggle Fullscreen</a>
+                        <a data-ng-click="fullScreen()" href=""><i class="zmdi zmdi-fullscreen"></i> Toggle Fullscreen</a>
                     </li>
                     <li>
                         <a data-ng-click="hctrl.clearLocalStorage()" href=""><i class="zmdi zmdi-delete"></i> Clear Local Storage</a>
@@ -164,9 +168,6 @@
                         <a href=""><i class="zmdi zmdi-settings"></i> Other Settings</a>
                     </li>
                 </ul>
-            </li>
-            <li class="hidden-xs" data-target="chat" data-toggle-sidebar data-model-right="sidebarToggle.right" data-ng-class="{ 'open': sidebarToggle.right === true }">
-                <a class="tm-chat" href=""></a>
             </li>
         </ul>
     </li>

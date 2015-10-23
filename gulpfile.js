@@ -45,6 +45,14 @@ var filePaths = {
             to: "./fonts"
         },
         {
+            from: config.bowerDir + "/material-design-iconic-font/dist/fonts/*.*",
+            to: "./fonts"
+        },
+        {
+            from: config.bowerDir + "/material-design-iconic-font/dist/css/material-design-iconic-font.min.css",
+            to: "./css"
+        },
+        {
             from: config.bowerDir + "/jquery/dist/*.*",
             to: config.jsVendor + "/jquery"
         },
@@ -71,6 +79,10 @@ var filePaths = {
         {
             from: config.bowerDir + "/angular-ui-router/release/*.js",
             to: config.jsVendor + "/angular-ui-router"
+        },
+        {
+            from: config.bowerDir + "/jquery.nicescroll/dist/*.*",
+            to: config.jsVendor + "/jquery.nicescroll"
         }
     ]
 };
