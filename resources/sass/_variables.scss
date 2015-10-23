@@ -1,10 +1,11 @@
+@import "bootstrap/variables";
+
 /*
  * Font Icon Family
  */
 $font-icon-md:              "Material-Design-Iconic-Font";
 $icon-font-path:            "../fonts";
 $fonts-path:                $icon-font-path;
-    
 
 
 /*
@@ -18,6 +19,7 @@ $container-desktop:            calc(100% - #{$grid-gutter-width});
 $body-bg:                   #edecec;
 $text-color:                #5E5E5E;
 $font-family-sans-serif:    roboto;
+$font-family-base:          $font-family-sans-serif;
 $font-size-base:            13px;
 $link-hover-decoration:     none;
 $headings-color:			#000000;

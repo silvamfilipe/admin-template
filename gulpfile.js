@@ -30,7 +30,11 @@ var filePaths = {
         },
         {
             from: config.bowerDir + "/material-shadows/material-shadows.scss",
-            to: config.sassPath + "/material-shadows/_material-shadows.scss"
+            to: config.sassPath + "/material-shadows"
+        },
+        {
+            from: config.bowerDir + "/waves/src/scss/waves.scss",
+            to: config.sassPath + "/waves"
         },
         {
             from: config.bowerDir + "/bootstrap-sass/assets/stylesheets/bootstrap/mixins/*.*",

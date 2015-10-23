@@ -1,13 +1,13 @@
 /*
- * Load Main Bootstrap LESS files
- */
-@import "bootstrap";
-
-/*
  * Variable and Mixin
  */
 @import "variables";
 @import "mixins";
+
+/*
+ * Load Main Bootstrap SCSS files
+ */
+@import "bootstrap";
 
 /*
  * Load Font
@@ -20,6 +20,18 @@
 @import "inc/angularCSP";
 
 /*
- * Load Website related LESS files
+ * Vendors
  */
+@import 'material-shadows/material-shadows';
+@import 'waves/waves';
+
+/*
+ * Load Website related SCSS files
+ */
+@import 'inc/generics';
+@import 'inc/bootstrap-overrides';
+@import 'inc/base';
+@import 'inc/header';
+@import 'inc/sidebar';
+@import 'inc/dropdown';
 @import "inc/ie-warning";

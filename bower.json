@@ -29,6 +29,7 @@
     "angular": "~1.4.7",
     "angular-bootstrap": "~0.14.2",
     "angular-ui-router": "~0.2.15",
-    "material-shadows": "~2.0.2"
+    "material-shadows": "~2.0.2",
+    "waves": "~0.7.2"
   }
 }
