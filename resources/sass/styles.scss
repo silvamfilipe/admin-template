@@ -40,17 +40,25 @@
 @import "inc/tabs";
 @import "inc/card";
 @import "inc/chart";
-@import 'inc/widgets';
-@import 'inc/table';
-@import 'inc/todo';
-@import 'inc/button';
-@import 'inc/form';
-@import 'inc/misc';
+@import "inc/widgets";
+@import "inc/table";
+@import "inc/todo";
+@import "inc/button";
+@import "inc/form";
+@import "inc/pagination";
+@import "inc/popover";
+@import "inc/wizard";
+@import "inc/alert";
+@import "inc/media";
+@import "inc/modal";
+@import "inc/panel";
+@import "inc/tooltip";
+@import "inc/misc";
 @import "inc/ie-warning";
-@import 'inc/load';
-@import 'inc/footer';
+@import "inc/load";
+@import "inc/footer";
 
-@import 'inc/print';
+@import "inc/print";
 
 /*
  * Vendor Overrides
@@ -58,5 +66,7 @@
 @import "inc/vendor-overrides/mediaelement";
 @import "inc/vendor-overrides/fullcalendar";
 @import "inc/vendor-overrides/bootstrap-chosen";
-@import 'inc/vendor-overrides/waves';
+@import "inc/vendor-overrides/waves";
 @import "inc/vendor-overrides/ui-bootstrap";
+@import "inc/vendor-overrides/ng-table";
+@import 'inc/vendor-overrides/sweetalert';

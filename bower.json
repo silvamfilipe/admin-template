@@ -32,6 +32,13 @@
     "material-shadows": "~2.0.2",
     "waves": "~0.7.2",
     "jquery.nicescroll": "~3.6.0",
-    "material-design-iconic-font": "~2.1.2"
+    "material-design-iconic-font": "~2.1.2",
+    "angular-animate": "~1.4.7",
+    "angular-resource": "~1.4.7",
+    "angular-loading-bar": "~0.8.0",
+    "oclazyload": "~1.0.6",
+    "angular-nouislider": "~0.3.1",
+    "ng-table": "~0.8.3",
+    "bootstrap-sweetalert": "~0.4.5"
   }
 }

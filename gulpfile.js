@@ -69,8 +69,39 @@ var filePaths = {
             to: config.jsVendor + "/angular"
         },
         {
-            from: config.bowerDir + "/angular/*.js.*",
-            to: config.jsVendor + "/angular"
+            from: config.bowerDir + "/angular-animate/*.min.*",
+            to: config.jsVendor + "/angular-animate"
+        },
+        {
+            from: config.bowerDir + "/angular-resource/*.min.*",
+            to: config.jsVendor + "/angular-resource"
+        },
+        {
+            from: config.bowerDir + "/angular-loading-bar/build/*.min.*",
+            to: config.jsVendor + "/angular-loading-bar"
+        },
+        {
+            from: config.bowerDir + "/oclazyload/dist/ocLazyLoad.min.js",
+            to: config.jsVendor + "/oclazyload"
+        },
+        {
+            from: config.bowerDir + "/angular-nouislider/src/*.min.js",
+            to: config.jsVendor + "/angular-nouislider"
+        },
+        {
+            from: config.bowerDir + "/ng-table/dist/*.min.js*",
+            to: config.jsVendor + "/ng-table"
+        },
+        {
+            from: config.bowerDir + "/waves/dist/*.min.js*",
+            to: config.jsVendor + "/waves"
+        },
+        {
+            from: [
+                config.bowerDir + "/bootstrap-sweetalert/lib/sweet-alert.min.js",
+                config.bowerDir + "/bootstrap-sweetalert/lib/sweet-alert.css"
+            ],
+            to: config.jsVendor + "/bootstrap-sweetalert"
         },
         {
             from: config.bowerDir + "/angular-bootstrap/ui-bootstrap-tpls.min.js",

@@ -4,7 +4,7 @@ materialAdmin
 
         $stateProvider
         
-        //------------------------------
+            //------------------------------
             // HOME
             //------------------------------
         
@@ -33,6 +33,15 @@ materialAdmin
                         ])
                     }
                 }*/
+            })
+        
+            //------------------------------
+            // TYPOGRAPHY
+            //------------------------------
+        
+            .state ('typography', {
+                url: '/typography',
+                templateUrl: 'views/typography.html'
             })
         
     });

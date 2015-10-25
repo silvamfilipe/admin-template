@@ -9,6 +9,8 @@
         
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="js/vendor/bootstrap-sweetalert/sweet-alert.css">
+        <link rel="stylesheet" href="js/vendor/angular-loading-bar/loading-bar.min.css">
         <link rel="stylesheet" href="css/styles.css">
             
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -65,15 +67,25 @@
         
         <!-- Angular -->
         <script src="js/vendor/angular/angular.min.js"></script>
+        <script src="js/vendor/angular-animate/angular-animate.min.js"></script>
+        <script src="js/vendor/angular-resource/angular-resource.min.js"></script>
         
         
         <!-- Angular Modules -->
         <script src="js/vendor/angular-ui-router/angular-ui-router.min.js"></script>
+        <script src="js/vendor/angular-loading-bar/loading-bar.min.js"></script>
+        <script src="js/vendor/oclazyload/ocLazyLoad.min.js"></script>
         <script src="js/vendor/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
 
         
         <!-- Common Vendors -->
         <script src="js/vendor/jquery.nicescroll/jquery.nicescroll.min.js"></script>
+        <script src="js/vendor/bootstrap-sweetalert/sweet-alert.min.js"></script>
+        <script src="js/vendor/waves/waves.min.js"></script>
+        <script src="js/vendor/ng-table/ng-table.min.js"></script>
+        
+        <!-- Using below vendors in order to avoid misloading on resolve -->
+        <script src="js/vendor/angular-nouislider/nouislider.min.js"></script>
         
         <!-- App level -->
         <script src="js/app.js"></script>
@@ -83,5 +95,6 @@
         
         <!-- Template Modules -->
         <script src="js/modules/template.js"></script>
+        <script src="js/modules/ui.js"></script>
     </body>
 </html>

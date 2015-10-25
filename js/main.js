@@ -1,14 +1,3 @@
-var materialAdmin = angular.module('materialAdmin', [
-    // 'ngAnimate',
-    // 'ngResource',
-    'ui.router',
-    'ui.bootstrap'
-    // 'angular-loading-bar',
-    // 'oc.lazyLoad',
-    // 'nouislider',
-    // 'ngTable'
-]);
-
 /**
  * Main application controller
  */
@@ -16,6 +5,7 @@ materialAdmin
 
     // Home page
     .controller('materialadminCtrl', ['$scope', function($scope) {
+        var self = this;
         var mobileRegEx = new RegExp('/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i');
     
         // Detact Mobile Browser
@@ -24,18 +14,20 @@ materialAdmin
         }
         
         // By default Sidbars are hidden in boxed layout and in wide layout only the right sidebar is hidden.
-        this.sidebarToggle = {
+        self.sidebarToggle = {
             left: false,
             right: false
         }
         
         // By default template has a boxed layout
-        this.layoutType = localStorage.getItem('ma-layout-status');
+        self.layoutType = localStorage.getItem('ma-layout-status');
+        
+        
         
         //Close sidebar on click
         $scope.sidebarStat = function(event) {        
             if (!angular.element(event.target).parent().hasClass('active')) {
-                this.sidebarToggle.left = false;
+                self.sidebarToggle.left = false;
             }
         }
         
