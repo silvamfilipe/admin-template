@@ -97,6 +97,34 @@ var filePaths = {
             to: config.jsVendor + "/waves"
         },
         {
+            from: config.bowerDir + "/remarkable-bootstrap-notify/bootstrap-notify.min.js",
+            to: config.jsVendor + "/remarkable-bootstrap-notify"
+        },
+        {
+            from: config.bowerDir + "/flot/*.flot*.js",
+            to: config.jsVendor + "/flot"
+        },
+        {
+            from: config.bowerDir + "/moment/min/*.js",
+            to: config.jsVendor + "/moment"
+        },
+        {
+            from: config.bowerDir + "/fullcalendar/dist/*.min.*",
+            to: config.jsVendor + "/fullcalendar"
+        },
+        {
+            from: config.bowerDir + "/flot.curvedlines/*.js",
+            to: config.jsVendor + "/flot.curvedlines"
+        },
+        {
+            from: config.bowerDir + "/flot.tooltip/js/*.min.js",
+            to: config.jsVendor + "/flot.tooltip"
+        },
+        {
+            from: config.bowerDir + "/flot.orderbars/js/*.js",
+            to: config.jsVendor + "/flot.orderbars"
+        },
+        {
             from: [
                 config.bowerDir + "/bootstrap-sweetalert/lib/sweet-alert.min.js",
                 config.bowerDir + "/bootstrap-sweetalert/lib/sweet-alert.css"
