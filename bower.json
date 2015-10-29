@@ -46,6 +46,12 @@
     "moment": "~2.10.6",
     "flot.orderbars": "*",
     "fullcalendar": "~2.4.0",
-    "flot.tooltip": "~0.8.5"
+    "flot.tooltip": "~0.8.5",
+    "sparklines": "~1.0.0",
+    "jquery.easy-pie-chart": "easy-pie-chart#~2.1.6",
+    "simpleWeather": "~3.0.2",
+    "mediaelement": "~2.18.2",
+    "autosize": "~3.0.13",
+    "lightgallery": "~1.2.6"
   }
 }

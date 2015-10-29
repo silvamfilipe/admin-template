@@ -11,29 +11,29 @@ materialAdmin
         
             .state ('home', {
                 url: '/home',
-                templateUrl: 'views/home.html'
-                /*resolve: {
+                templateUrl: 'views/home.html',
+                resolve: {
                     loadPlugin: function($ocLazyLoad) {
                         return $ocLazyLoad.load ([
                             {
                                 name: 'css',
                                 insertBefore: '#app-level',
                                 files: [
-                                    'vendors/bower_components/fullcalendar/dist/fullcalendar.min.css',
+                                    'js/vendor/fullcalendar/fullcalendar.min.css',
                                 ]
                             },
                             {
                                 name: 'vendors',
                                 insertBefore: '#app-level-js',
                                 files: [
-                                    'vendors/sparklines/jquery.sparkline.min.js',
-                                    'vendors/bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js',
-                                    'vendors/bower_components/simpleWeather/jquery.simpleWeather.min.js'
+                                    'js/vendor/sparklines/jquery.sparkline.min.js',
+                                    'js/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js',
+                                    'js/vendor/simpleWeather/jquery.simpleWeather.min.js'
                                 ]
                             }
                         ])
                     }
-                }*/
+                }
             })
         
 
@@ -66,14 +66,14 @@ materialAdmin
                                 name: 'css',
                                 insertBefore: '#app-level',
                                 files: [
-                                    'vendors/bower_components/mediaelement/build/mediaelementplayer.css',
+                                    'js/vendor/mediaelement/mediaelementplayer.css',
                                 ]
                             },
                             {
                                 name: 'vendors',
                                 files: [
-                                    'vendors/bower_components/mediaelement/build/mediaelement-and-player.js',
-                                    'vendors/bower_components/autosize/dist/autosize.min.js'
+                                    'js/vendor/mediaelement/mediaelement-and-player.js',
+                                    'js/vendor/autosize/autosize.min.js'
                                 ]
                             }
                         ])
@@ -124,7 +124,7 @@ materialAdmin
                             {
                                 name: 'vendors',
                                 files: [
-                                    'vendors/bower_components/autosize/dist/autosize.min.js'
+                                    'js/vendor/autosize/autosize.min.js'
                                 ]
                             }
                         ])
@@ -237,15 +237,15 @@ materialAdmin
                                 name: 'css',
                                 insertBefore: '#app-level',
                                 files: [
-                                    'vendors/bower_components/mediaelement/build/mediaelementplayer.css',
-                                    'vendors/bower_components/lightgallery/light-gallery/css/lightGallery.css'
+                                    'js/vendor/mediaelement/mediaelementplayer.css',
+                                    'js/vendor/lightgallery/css/lightgallery.min.css'
                                 ]
                             },
                             {
                                 name: 'vendors',
                                 files: [
-                                    'vendors/bower_components/mediaelement/build/mediaelement-and-player.js',
-                                    'vendors/bower_components/lightgallery/light-gallery/js/lightGallery.min.js'
+                                    'js/vendor/mediaelement/mediaelement-and-player.js',
+                                    'js/vendor/lightgallery/js/lightgallery.min.js'
                                 ]
                             }
                         ])
@@ -282,8 +282,8 @@ materialAdmin
                             {
                                 name: 'vendors',
                                 files: [
-                                    'vendors/sparklines/jquery.sparkline.min.js',
-                                    'vendors/bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js',
+                                    'js/vendor/sparklines/jquery.sparkline.min.js',
+                                    'js/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js',
                                 ]
                             }
                         ])
@@ -306,14 +306,14 @@ materialAdmin
                                 name: 'css',
                                 insertBefore: '#app-level',
                                 files: [
-                                    'vendors/bower_components/fullcalendar/dist/fullcalendar.min.css',
+                                    'js/vendor/fullcalendar/fullcalendar.min.css',
                                 ]
                             },
                             {
                                 name: 'vendors',
                                 files: [
-                                    'vendors/bower_components/moment/min/moment.min.js',
-                                    'vendors/bower_components/fullcalendar/dist/fullcalendar.min.js'
+                                    'js/vendor/moment/moment.min.js',
+                                    'js/vendor/fullcalendar/fullcalendar.min.js'
                                 ]
                             }
                         ])
@@ -336,13 +336,13 @@ materialAdmin
                                 name: 'css',
                                 insertBefore: '#app-level',
                                 files: [
-                                    'vendors/bower_components/lightgallery/light-gallery/css/lightGallery.css'
+                                    'js/vendor/lightgallery/css/lightgallery.min.css'
                                 ]
                             },
                             {
                                 name: 'vendors',
                                 files: [
-                                    'vendors/bower_components/lightgallery/light-gallery/js/lightGallery.min.js'
+                                    'js/vendor/lightgallery/js/lightgallery.min.js'
                                 ]
                             }
                         ])

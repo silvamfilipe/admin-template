@@ -294,8 +294,8 @@ materialAdmin
         this.month = 'month';
     
         this.actionMenu = '<ul class="actions actions-alt" id="fc-actions">' +
-                            '<li class="dropdown" dropdown>' +
-                                '<a href="" dropdown-toggle><i class="zmdi zmdi-more-vert"></i></a>' +
+                            '<li class="dropdown" uib-dropdown>' +
+                                '<a href="" uib-dropdown-toggle><i class="zmdi zmdi-more-vert"></i></a>' +
                                 '<ul class="dropdown-menu dropdown-menu-right">' +
                                     '<li class="active">' +
                                         '<a data-calendar-view="month" href="">Month View</a>' +

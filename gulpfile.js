@@ -113,6 +113,10 @@ var filePaths = {
             to: config.jsVendor + "/fullcalendar"
         },
         {
+            from: config.bowerDir + "/fullcalendar/dist/lang/*",
+            to: config.jsVendor + "/fullcalendar/lang"
+        },
+        {
             from: config.bowerDir + "/flot.curvedlines/*.js",
             to: config.jsVendor + "/flot.curvedlines"
         },
@@ -123,6 +127,42 @@ var filePaths = {
         {
             from: config.bowerDir + "/flot.orderbars/js/*.js",
             to: config.jsVendor + "/flot.orderbars"
+        },
+        {
+            from: config.bowerDir + "/sparklines/source/*.js",
+            to: config.jsVendor + "/sparklines"
+        },
+        {
+            from: config.bowerDir + "/jquery.easy-pie-chart/dist/*.min.js",
+            to: config.jsVendor + "/jquery.easy-pie-chart"
+        },
+        {
+            from: config.bowerDir + "/simpleWeather/*.min.js",
+            to: config.jsVendor + "/simpleWeather"
+        },
+        {
+            from: config.bowerDir + "/mediaelement/build/*",
+            to: config.jsVendor + "/mediaelement"
+        },
+        {
+            from: config.bowerDir + "/autosize/dist/*.min.js",
+            to: config.jsVendor + "/autosize"
+        },
+        {
+            from: config.bowerDir + "/lightgallery/dist/css/*.min.*",
+            to: config.jsVendor + "/lightgallery/css"
+        },
+        {
+            from: config.bowerDir + "/lightgallery/dist/fonts/*",
+            to: config.jsVendor + "/lightgallery/fonts"
+        },
+        {
+            from: config.bowerDir + "/lightgallery/dist/img/*",
+            to: config.jsVendor + "/lightgallery/img"
+        },
+        {
+            from: config.bowerDir + "/lightgallery/dist/js/*.min.*",
+            to: config.jsVendor + "/lightgallery/js"
         },
         {
             from: [
