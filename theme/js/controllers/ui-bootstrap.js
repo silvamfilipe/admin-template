@@ -86,13 +86,13 @@ materialAdmin
     //====================================
     // MODAL
     //====================================
-    .controller('ModalDemoCtrl', function ($scope, $modal, $log) {
+    .controller('ModalDemoCtrl', function ($scope, $uibModal, $log) {
 
         $scope.modalContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales orci ante, sed ornare eros vestibulum ut. Ut accumsan vitae eros sit amet tristique. Nullam scelerisque nunc enim, non dignissim nibh faucibus ullamcorper. Fusce pulvinar libero vel ligula iaculis ullamcorper. Integer dapibus, mi ac tempor varius, purus nibh mattis erat, vitae porta nunc nisi non tellus. Vivamus mollis ante non massa egestas fringilla. Vestibulum egestas consectetur nunc at ultricies. Morbi quis consectetur nunc.';
     
         //Create Modal
         function modalInstances(animation, size, backdrop, keyboard) {
-            var modalInstance = $modal.open({
+            var modalInstance = $uibModal.open({
                 animation: animation,
                 templateUrl: 'myModalContent.html',
                 controller: 'ModalInstanceCtrl',
@@ -130,19 +130,19 @@ materialAdmin
 
     })
 
-    // Please note that $modalInstance represents a modal window (instance) dependency.
-    // It is not the same as the $modal service used above.
+    // Please note that $uibModalInstance represents a modal window (instance) dependency.
+    // It is not the same as the $uibModal service used above.
 
-    .controller('ModalInstanceCtrl', function ($scope, $modalInstance, content) {
+    .controller('ModalInstanceCtrl', function ($scope, $uibModalInstance, content) {
 
           $scope.modalContent = content;
 
           $scope.ok = function () {
-            $modalInstance.close();
+            $uibModalInstance.close();
           };
 
           $scope.cancel = function () {
-            $modalInstance.dismiss('cancel');
+            $uibModalInstance.dismiss('cancel');
           };
     })
     

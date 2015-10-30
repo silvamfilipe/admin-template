@@ -288,7 +288,7 @@ materialAdmin
     // CALENDAR
     //=================================================
     
-    .controller('calendarCtrl', function($modal){
+    .controller('calendarCtrl', function($uibModal){
     
         //Create and add Action button with dropdown in Calendar header. 
         this.month = 'month';
@@ -319,7 +319,7 @@ materialAdmin
             
         //Open new event modal on selecting a day
         this.onSelect = function(argStart, argEnd) {            
-            var modalInstance  = $modal.open({
+            var modalInstance  = $uibModal.open({
                 templateUrl: 'addEvent.html',
                 controller: 'addeventCtrl',
                 backdrop: 'static',
@@ -335,7 +335,7 @@ materialAdmin
     })
 
     //Add event Controller (Modal Instance)
-    .controller('addeventCtrl', function($scope, $modalInstance, calendarData){
+    .controller('addeventCtrl', function($scope, $uibModalInstance, calendarData){
         
         //Calendar Event Data
         $scope.calendarData = {
@@ -382,13 +382,13 @@ materialAdmin
 
                 $scope.activeState = -1;
                 $scope.calendarData.eventName = '';     
-                $modalInstance.close();
+                $uibModalInstance.close();
             }
         }
         
         //Dismiss 
         $scope.eventDismiss = function() {
-            $modalInstance.dismiss();
+            $uibModalInstance.dismiss();
         }
     })
 
