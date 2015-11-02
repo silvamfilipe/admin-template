@@ -52,6 +52,10 @@
     "simpleWeather": "~3.0.2",
     "mediaelement": "~2.18.2",
     "autosize": "~3.0.13",
-    "lightgallery": "~1.2.6"
+    "lightgallery": "~1.2.6",
+    "summernote": "~0.6.16",
+    "eonasdan-bootstrap-datetimepicker": "~4.17.37",
+    "chosen": "~1.4.2",
+    "angular-chosen-localytics": "~1.0.7"
   }
 }

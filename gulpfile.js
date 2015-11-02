@@ -165,6 +165,30 @@ var filePaths = {
             to: config.jsVendor + "/lightgallery/js"
         },
         {
+            from: config.bowerDir + "/summernote/dist/*",
+            to: config.jsVendor + "/summernote"
+        },
+        {
+            from: config.bowerDir + "/nouislider/jquery.*",
+            to: config.jsVendor + "/nouislider"
+        },
+        {
+            from: config.bowerDir + "/eonasdan-bootstrap-datetimepicker/build/css/*",
+            to: config.jsVendor + "/eonasdan-bootstrap-datetimepicker/css"
+        },
+        {
+            from: config.bowerDir + "/eonasdan-bootstrap-datetimepicker/build/js/*",
+            to: config.jsVendor + "/eonasdan-bootstrap-datetimepicker/js"
+        },
+        {
+            from: config.bowerDir + "/chosen/chosen/*",
+            to: config.jsVendor + "/chosen"
+        },
+        {
+            from: config.bowerDir + "/angular-chosen-localytics/*s*.*",
+            to: config.jsVendor + "/angular-chosen-localytics"
+        },
+        {
             from: [
                 config.bowerDir + "/bootstrap-sweetalert/lib/sweet-alert.min.js",
                 config.bowerDir + "/bootstrap-sweetalert/lib/sweet-alert.css"

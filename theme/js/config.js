@@ -142,24 +142,24 @@ materialAdmin
                                 name: 'css',
                                 insertBefore: '#app-level',
                                 files: [
-                                    'vendors/bower_components/nouislider/jquery.nouislider.css',
-                                    'vendors/farbtastic/farbtastic.css',
-                                    'vendors/bower_components/summernote/dist/summernote.css',
-                                    'vendors/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css',
-                                    'vendors/bower_components/chosen/chosen.min.css'
+                                    'js/vendor/nouislider/jquery.nouislider.css',
+                                    'js/vendor/farbtastic/farbtastic.css',
+                                    'js/vendor/summernote/summernote.css',
+                                    'js/vendor/eonasdan-bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css',
+                                    'js/vendor/chosen/chosen.min.css'
                                 ]
                             },
                             {
                                 name: 'vendors',
                                 files: [
-                                    'vendors/input-mask/input-mask.min.js',
-                                    'vendors/bower_components/nouislider/jquery.nouislider.min.js',
-                                    'vendors/bower_components/moment/min/moment.min.js',
-                                    'vendors/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js',
-                                    'vendors/bower_components/summernote/dist/summernote.min.js',
-                                    'vendors/fileinput/fileinput.min.js',
-                                    'vendors/bower_components/chosen/chosen.jquery.js',
-                                    'vendors/bower_components/angular-chosen-localytics/chosen.js',
+                                    'js/vendor/input-mask/input-mask.min.js',
+                                    'js/vendor/nouislider/jquery.nouislider.min.js',
+                                    'js/vendor/moment/moment.min.js',
+                                    'js/vendor/eonasdan-bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js',
+                                    'js/vendor/summernote/summernote.min.js',
+                                    'js/vendor/fileinput/fileinput.min.js',
+                                    'js/vendor/chosen/chosen.jquery.min.js',
+                                    'js/vendor/angular-chosen-localytics/chosen.js',
                                 ]
                             }
                         ])
@@ -407,13 +407,13 @@ materialAdmin
                                 name: 'css',
                                 insertBefore: '#app-level',
                                 files: [
-                                    'vendors/bower_components/lightgallery/light-gallery/css/lightGallery.css'
+                                    'js/vendor/lightgallery/css/lightgallery.min.css'
                                 ]
                             },
                             {
                                 name: 'vendors',
                                 files: [
-                                    'vendors/bower_components/lightgallery/light-gallery/js/lightGallery.min.js'
+                                    'js/vendor/lightgallery/js/lightgallery.min.js'
                                 ]
                             }
                         ])
@@ -431,13 +431,13 @@ materialAdmin
                                 name: 'css',
                                 insertBefore: '#app-level',
                                 files: [
-                                    'vendors/bower_components/lightgallery/light-gallery/css/lightGallery.css'
+                                    'js/vendor/lightgallery/css/lightgallery.min.css'
                                 ]
                             },
                             {
                                 name: 'vendors',
                                 files: [
-                                    'vendors/bower_components/lightgallery/light-gallery/js/lightGallery.min.js'
+                                    'js/vendor/lightgallery/js/lightgallery.min.js'
                                 ]
                             }
                         ])
@@ -488,15 +488,15 @@ materialAdmin
                                 name: 'vendors',
                                 insertBefore: '#app-level',
                                 files: [
-                                    'vendors/bower_components/autosize/dist/autosize.min.js',
-                                    'vendors/bower_components/lightgallery/light-gallery/css/lightGallery.css'
+                                    'js/vendor/autosize/autosize.min.js',
+                                    'js/vendor/lightgallery/css/lightgallery.min.css'
                                 ]
                             },
                             {
                                 name: 'vendors',
                                 files: [
-                                    'vendors/bower_components/mediaelement/build/mediaelement-and-player.js',
-                                    'vendors/bower_components/lightgallery/light-gallery/js/lightGallery.min.js'
+                                    'js/vendor/mediaelement/mediaelement-and-player.min.js',
+                                    'js/vendor/lightgallery/js/lightgallery.min.js'
                                 ]
                             }
                         ])

@@ -22,42 +22,54 @@
 /*
  * Vendors
  */
+@import 'weather-icons/weather-icons';
+@import 'fileinput/fileinput';
 @import "material-shadows/material-shadows";
 @import "waves/waves";
 
 /*
  * Load Website related SCSS files
  */
-@import "inc/generics";
-@import "inc/bootstrap-overrides";
-@import "inc/base";
-@import "inc/header";
-@import "inc/sidebar";
-@import "inc/dropdown";
-@import "inc/listview";
-@import "inc/progress-bar";
-@import "inc/chat";
-@import "inc/tabs";
-@import "inc/card";
-@import "inc/chart";
-@import "inc/widgets";
-@import "inc/table";
-@import "inc/todo";
-@import "inc/button";
-@import "inc/form";
-@import "inc/pagination";
-@import "inc/popover";
-@import "inc/wizard";
-@import "inc/alert";
-@import "inc/media";
-@import "inc/modal";
-@import "inc/panel";
-@import "inc/tooltip";
+@import 'inc/generics';
+@import 'inc/bootstrap-overrides';
+@import 'inc/base';
+@import 'inc/header';
+@import 'inc/sidebar';
+@import 'inc/dropdown';
+@import 'inc/listview';
+@import 'inc/progress-bar';
+@import 'inc/chat';
+@import 'inc/tabs';
+@import 'inc/card';
+@import 'inc/chart';
+@import 'inc/widgets';
+@import 'inc/table';
+@import 'inc/todo';
+@import 'inc/button';
+@import 'inc/form';
+@import 'inc/pagination';
+@import 'inc/popover';
+@import 'inc/wizard';
+@import 'inc/alert';
+@import 'inc/media';
+@import 'inc/modal';
+@import 'inc/panel';
+@import 'inc/tooltip';
+@import 'inc/breadcrumb';
 @import 'inc/messages';
-@import "inc/misc";
-@import "inc/ie-warning";
-@import "inc/load";
-@import "inc/footer";
+@import 'inc/404';
+@import 'inc/login';
+@import 'inc/profile';
+@import 'inc/photos';
+@import 'inc/contacts';
+@import 'inc/shadow';
+@import 'inc/misc';
+@import 'inc/ie-warning';
+@import 'inc/load';
+@import 'inc/footer';
+@import 'inc/pricing-table';
+@import 'inc/invoice';
+@import 'inc/wall';
 
 @import "inc/print";
 
@@ -67,6 +79,9 @@
 @import "inc/vendor-overrides/mediaelement";
 @import "inc/vendor-overrides/fullcalendar";
 @import "inc/vendor-overrides/bootstrap-chosen";
+@import "inc/vendor-overrides/noUiSlider";
+@import 'inc/vendor-overrides/farbtastic';
+@import 'inc/vendor-overrides/summernote';
 @import "inc/vendor-overrides/waves";
 @import "inc/vendor-overrides/ui-bootstrap";
 @import "inc/vendor-overrides/ng-table";
