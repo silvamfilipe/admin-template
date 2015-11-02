@@ -90,12 +90,13 @@ materialAdmin
     // COLOR PICKER
     // =========================================================================
 
-    .directive('colordPicker', function(){
+    .directive('ngFarbtastic', function(){
         return {
-            restrict: 'A',
+            restrict: 'AE',
             link: function(scope, element, attrs) {
                 $(element).each(function(){
                     var colorOutput = $(this).closest('.cp-container').find('.cp-value');
+                    console.log(this);
                     $(this).farbtastic(colorOutput);
                 });
                 

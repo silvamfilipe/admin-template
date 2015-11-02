@@ -13,8 +13,8 @@
                     <i class="zmdi zmdi-check-all"></i>
                 </a>
             </li>
-            <li class="dropdown" dropdown>
-                <a href="" dropdown-toggle>
+            <li class="dropdown" uib-dropdown>
+                <a href="" uib-dropdown-toggle>
                     <i class="zmdi zmdi-more-vert"></i>
                 </a>
 
@@ -42,8 +42,8 @@
 
 
             <ul class="actions">
-                <li dropdown class="dropdown action-show">
-                    <a href="" dropdown-toggle>
+                <li uib-dropdown class="dropdown action-show">
+                    <a href="" uib-dropdown-toggle>
                         <i class="zmdi zmdi-more-vert"></i>
                     </a>
 
@@ -62,7 +62,7 @@
 
             <br/>
 
-            <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</alert>
+            <uib-alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</uib-alert>
         </div>
     </div>
 
@@ -72,8 +72,8 @@
             <h2>Buttons <small><a target="_blank" class="c-gray" href="http://angular-ui.github.io/bootstrap/#/buttons">ui.bootstrap.buttons</a></small></h2>
 
             <ul class="actions">
-                <li dropdown class="dropdown action-show">
-                    <a href="" dropdown-toggle>
+                <li uib-dropdown class="dropdown action-show">
+                    <a href="" uib-dropdown-toggle>
                         <i class="zmdi zmdi-more-vert"></i>
                     </a>
 
@@ -99,7 +99,7 @@
                     <br/>
                     <br/>
 
-                    <button type="button" class="btn btn-primary" ng-model="singleModel" btn-checkbox btn-checkbox-true="1" btn-checkbox-false="0">
+                    <button type="button" class="btn btn-primary" ng-model="singleModel" uib-btn-checkbox btn-checkbox-true="1" btn-checkbox-false="0">
                         Single Toggle
                     </button>
                 </div>
@@ -112,9 +112,9 @@
                     <br/>
 
                     <div class="btn-group">
-                        <label class="btn btn-primary" ng-model="checkModel.left" btn-checkbox>Left</label>
-                        <label class="btn btn-primary" ng-model="checkModel.middle" btn-checkbox>Middle</label>
-                        <label class="btn btn-primary" ng-model="checkModel.right" btn-checkbox>Right</label>
+                        <label class="btn btn-primary" ng-model="checkModel.left" uib-btn-checkbox>Left</label>
+                        <label class="btn btn-primary" ng-model="checkModel.middle" uib-btn-checkbox>Middle</label>
+                        <label class="btn btn-primary" ng-model="checkModel.right" uib-btn-checkbox>Right</label>
                     </div>
                 </div>
 
@@ -126,9 +126,9 @@
                     <br/>
 
                     <div class="btn-group">
-                        <label class="btn btn-primary" ng-model="radioModel" btn-radio="'Left'">Left</label>
-                        <label class="btn btn-primary" ng-model="radioModel" btn-radio="'Middle'">Middle</label>
-                        <label class="btn btn-primary" ng-model="radioModel" btn-radio="'Right'">Right</label>
+                        <label class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'Left'">Left</label>
+                        <label class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'Middle'">Middle</label>
+                        <label class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'Right'">Right</label>
                     </div>
                 </div>
             </div>
@@ -141,8 +141,8 @@
             <h2>Carousel <small><a target="_blank" class="c-gray" href="http://angular-ui.github.io/bootstrap/#/carousel ">ui.bootstrap.carousel </a></small></h2>
 
             <ul class="actions">
-                <li dropdown class="dropdown action-show">
-                    <a href="" dropdown-toggle>
+                <li uib-dropdown class="dropdown action-show">
+                    <a href="" uib-dropdown-toggle>
                         <i class="zmdi zmdi-more-vert"></i>
                     </a>
 
@@ -162,15 +162,15 @@
 
             <br/>
 
-            <carousel interval="myInterval">
-                <slide ng-repeat="w in slides" active="slide.active">
+            <uib-carousel interval="myInterval">
+                <uib-slide ng-repeat="w in slides" active="slide.active">
                     <img ng-src="media/carousel/{{w.img}}">
                     <div class="carousel-caption" data-ng-if="w.title.length > 0">
                         <h3>{{w.title}}</h3>
                         <p>{{w.text}}</p>
                     </div>
-                </slide>
-            </carousel>
+                </uib-slide>
+            </uib-carousel>
 
             <br/>
             <br/>
@@ -197,8 +197,8 @@
             <h2>Collapse <small><a target="_blank" class="c-gray" href="http://angular-ui.github.io/bootstrap/#/collapse ">ui.bootstrap.collapse </a></small></h2>
 
             <ul class="actions">
-                <li dropdown class="dropdown action-show">
-                    <a href="" dropdown-toggle>
+                <li uib-dropdown class="dropdown action-show">
+                    <a href="" uib-dropdown-toggle>
                         <i class="zmdi zmdi-more-vert"></i>
                     </a>
 
@@ -221,8 +221,8 @@
             <br/>
             <br/>
 
-            <div collapse="isCollapsed">
-                <alert type="info">Nunc nec porta felis. Curabitur non fringilla ipsum, quis mollis metus. Etiam mauris elit, iaculis quis dapibus et, luctus id erat. Sed ac rutrum est, a bibendum nibh. Phasellus rhoncus imperdiet neque in tincidunt. Fusce nibh tellus, laoreet a orci in, auctor semper leo. Sed turpis odio, lobortis in orci et, finibus placerat nulla. Maecenas vehicula ante sit amet lacus placerat, non congue nibh tristique.</alert>
+            <div uib-collapse="isCollapsed">
+                <uib-alert type="info">Nunc nec porta felis. Curabitur non fringilla ipsum, quis mollis metus. Etiam mauris elit, iaculis quis dapibus et, luctus id erat. Sed ac rutrum est, a bibendum nibh. Phasellus rhoncus imperdiet neque in tincidunt. Fusce nibh tellus, laoreet a orci in, auctor semper leo. Sed turpis odio, lobortis in orci et, finibus placerat nulla. Maecenas vehicula ante sit amet lacus placerat, non congue nibh tristique.</uib-alert>
             </div>
 
         </div>
@@ -234,8 +234,8 @@
             <h2>Dropdown <small><a target="_blank" class="c-gray" href="http://angular-ui.github.io/bootstrap/#/dropdown ">ui.bootstrap.dropdown</a></small></h2>
 
             <ul class="actions">
-                <li dropdown class="dropdown action-show">
-                    <a href="" dropdown-toggle>
+                <li uib-dropdown class="dropdown action-show">
+                    <a href="" uib-dropdown-toggle>
                         <i class="zmdi zmdi-more-vert"></i>
                     </a>
 
@@ -249,7 +249,7 @@
         </div>
 
         <div class="card-body card-padding p-t-0" data-ng-controller="DropdownDemoCtrl">
-            <p>Dropdown is a simple directive which will toggle a dropdown menu on click or programmatically. You can either use is-open to toggle or add inside a <code>&lt;a dropdown-toggle&gt;</code> element to toggle it when is clicked. There is also the on-toggle(open) optional expression fired when dropdown changes state.</p>
+            <p>Dropdown is a simple directive which will toggle a dropdown menu on click or programmatically. You can either use is-open to toggle or add inside a <code>&lt;a uib-dropdown-toggle&gt;</code> element to toggle it when is clicked. There is also the on-toggle(open) optional expression fired when dropdown changes state.</p>
 
             <p>Add <code>dropdown-append-to-body</code> to the dropdown element to append to the inner <code>dropdown-menu</code> to the body. This is useful when the dropdown button is inside a div with <code>overflow: hidden</code>, and the menu would otherwise be hidden. <a target="_blank" href="http://angular-ui.github.io/bootstrap/#/dropdown ">Read more..</a></p>
 
@@ -344,16 +344,16 @@
             <p class="f-500 c-black m-b-20">Alignment</p>
 
             <div class="clearfix dropdown-btn-demo">
-                <div class="dropdown" dropdown>
-                    <button class="dropdown-toggle btn btn-default" dropdown-toggle>Dropdown Left</button>
+                <div class="dropdown" uib-dropdown>
+                    <button class="dropdown-toggle btn btn-default" uib-dropdown-toggle>Dropdown Left</button>
 
                     <ul class="dropdown-menu">
                         <li data-ng-repeat="w in items"><a href="">{{ w }}</a></li>
                     </ul>
                 </div>
 
-                <div class="dropdown" dropdown>
-                    <button class="dropdown-toggle btn btn-default" dropdown-toggle>Dropdown Right</button>
+                <div class="dropdown" uib-dropdown>
+                    <button class="dropdown-toggle btn btn-default" uib-dropdown-toggle>Dropdown Right</button>
 
                     <ul class="dropdown-menu pull-right">
                         <li data-ng-repeat="w in items"><a href="">{{ w }}</a></li>
@@ -367,16 +367,16 @@
             <p class="c-black f-500 m-b-20">Dropups - Trigger dropdown menus above elements</p>
 
             <div class="clearfix dropdown-btn-demo">
-                <div class="dropdown dropup" dropdown>
-                    <button class="dropdown-toggle btn btn-default" dropdown-toggle>This is a Dropup</button>
+                <div class="dropdown dropup" uib-dropdown>
+                    <button class="dropdown-toggle btn btn-default" uib-dropdown-toggle>This is a Dropup</button>
 
                     <ul class="dropdown-menu">
                         <li data-ng-repeat="w in items"><a href="">{{ w }}</a></li>
                     </ul>
                 </div>
 
-                <div class="dropdown dropup" dropdown>
-                    <button class="dropdown-toggle btn btn-default" dropdown-toggle>This is a right aligned dropup</button>
+                <div class="dropdown dropup" uib-dropdown>
+                    <button class="dropdown-toggle btn btn-default" uib-dropdown-toggle>This is a right aligned dropup</button>
 
                     <ul class="dropdown-menu pull-right">
                         <li data-ng-repeat="w in items"><a href="">{{ w }}</a></li>
@@ -390,9 +390,9 @@
             <p class="c-black f-500 m-b-20">Split Button Dropdowns</p>
 
             <div class="clearfix dropdown-btn-demo">
-                <div class="btn-group" dropdown>
+                <div class="btn-group" uib-dropdown>
                     <button type="button" class="btn btn-default">Default</button>
-                    <button type="button" class="btn btn-default dropdown-toggle" dropdown-toggle>
+                    <button type="button" class="btn btn-default dropdown-toggle" uib-dropdown-toggle>
                         <span class="caret"></span>
                         <span class="sr-only">Split button dropdowns</span>
                     </button>
@@ -401,9 +401,9 @@
                     </ul>
                 </div>
 
-                <div class="btn-group" dropdown>
+                <div class="btn-group" uib-dropdown>
                     <button type="button" class="btn btn-primary">Primary</button>
-                    <button type="button" class="btn btn-primary dropdown-toggle" dropdown-toggle>
+                    <button type="button" class="btn btn-primary dropdown-toggle" uib-dropdown-toggle>
                         <span class="caret"></span>
                         <span class="sr-only">Split button dropdowns</span>
                     </button>
@@ -412,9 +412,9 @@
                     </ul>
                 </div>
 
-                <div class="btn-group" dropdown>
+                <div class="btn-group" uib-dropdown>
                     <button type="button" class="btn btn-info">Info</button>
-                    <button type="button" class="btn btn-info dropdown-toggle" dropdown-toggle>
+                    <button type="button" class="btn btn-info dropdown-toggle" uib-dropdown-toggle>
                         <span class="caret"></span>
                         <span class="sr-only">Split button dropdowns</span>
                     </button>
@@ -423,9 +423,9 @@
                     </ul>
                 </div>
 
-                <div class="btn-group" dropdown>
+                <div class="btn-group" uib-dropdown>
                     <button type="button" class="btn btn-success">Success</button>
-                    <button type="button" class="btn btn-success dropdown-toggle" dropdown-toggle>
+                    <button type="button" class="btn btn-success dropdown-toggle" uib-dropdown-toggle>
                         <span class="caret"></span>
                         <span class="sr-only">Split button dropdowns</span>
                     </button>
@@ -434,9 +434,9 @@
                     </ul>
                 </div>
 
-                <div class="btn-group" dropdown>
+                <div class="btn-group" uib-dropdown>
                     <button type="button" class="btn btn-warning">Warning</button>
-                    <button type="button" class="btn btn-warning dropdown-toggle" dropdown-toggle>
+                    <button type="button" class="btn btn-warning dropdown-toggle" uib-dropdown-toggle>
                         <span class="caret"></span>
                         <span class="sr-only">Split button dropdowns</span>
                     </button>
@@ -445,9 +445,9 @@
                     </ul>
                 </div>
 
-                <div class="btn-group" dropdown>
+                <div class="btn-group" uib-dropdown>
                     <button type="button" class="btn btn-danger">Danger</button>
-                    <button type="button" class="btn btn-danger dropdown-toggle" dropdown-toggle>
+                    <button type="button" class="btn btn-danger dropdown-toggle" uib-dropdown-toggle>
                         <span class="caret"></span>
                         <span class="sr-only">Split button dropdowns</span>
                     </button>
@@ -467,8 +467,8 @@
 
 
             <ul class="actions">
-                <li dropdown class="dropdown action-show">
-                    <a href="" dropdown-toggle>
+                <li uib-dropdown class="dropdown action-show">
+                    <a href="" uib-dropdown-toggle>
                         <i class="zmdi zmdi-more-vert"></i>
                     </a>
 
@@ -555,8 +555,8 @@
 
 
             <ul class="actions">
-                <li dropdown class="dropdown action-show">
-                    <a href="" dropdown-toggle>
+                <li uib-dropdown class="dropdown action-show">
+                    <a href="" uib-dropdown-toggle>
                         <i class="zmdi zmdi-more-vert"></i>
                     </a>
 
@@ -577,25 +577,25 @@
 
             <p class="f-500 c-black m-b-0">Default</p>
 
-            <pagination total-items="totalItems" ng-model="currentPage" ng-change="pageChanged()"></pagination>
+            <uib-pagination total-items="totalItems" ng-model="currentPage" ng-change="pageChanged()"></uib-pagination>
 
             <br/>
             <br/>
 
             <p class="f-500 c-black m-b-0">With First and Last links</p>
-            <pagination boundary-links="true" total-items="totalItems" ng-model="currentPage" class="pagination-sm" previous-text="<div>dsd</div>" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;"></pagination>
+            <uib-pagination boundary-links="true" total-items="totalItems" ng-model="currentPage" class="pagination-sm" previous-text="<div>dsd</div>" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;"></uib-pagination>
 
             <br/>
             <br/>
 
             <p class="f-500 c-black m-b-0">Without Next and Previous</p>
-            <pagination direction-links="false" boundary-links="true" total-items="totalItems" ng-model="currentPage"></pagination>
+            <uib-pagination direction-links="false" boundary-links="true" total-items="totalItems" ng-model="currentPage"></uib-pagination>
 
             <br/>
             <br/>
 
             <p class="f-500 c-black m-b-0">Only Numbers</p>
-            <pagination direction-links="false" total-items="totalItems" ng-model="currentPage" num-pages="smallnumPages"></pagination>
+            <uib-pagination direction-links="false" total-items="totalItems" ng-model="currentPage" num-pages="smallnumPages"></uib-pagination>
 
             <br/>
             <br/>
@@ -607,12 +607,12 @@
             <br/>
 
             <p class="f-500 c-black m-b-0">Pager</p>
-            <pager total-items="totalItems" ng-model="currentPage"></pager>
+            <uib-pager total-items="totalItems" ng-model="currentPage"></uib-pager>
 
             <br/>
 
             <p class="f-500 c-black m-b-0">Limit the maximum visible buttons <small class="c-gray">[ Page: {{bigCurrentPage}} / {{numPages}} ]</small></p>
-            <pagination total-items="bigTotalItems" ng-model="bigCurrentPage" max-size="maxSize" class="pagination-sm" boundary-links="true"></pagination>
+            <uib-pagination total-items="bigTotalItems" ng-model="bigCurrentPage" max-size="maxSize" class="pagination-sm" boundary-links="true"></uib-pagination>
 
         </div>
     </div>
@@ -624,8 +624,8 @@
 
 
             <ul class="actions">
-                <li dropdown class="dropdown action-show">
-                    <a href="" dropdown-toggle>
+                <li uib-dropdown class="dropdown action-show">
+                    <a href="" uib-dropdown-toggle>
                         <i class="zmdi zmdi-more-vert"></i>
                     </a>
 
@@ -729,8 +729,8 @@
 
 
             <ul class="actions">
-                <li dropdown class="dropdown action-show">
-                    <a href="" dropdown-toggle>
+                <li uib-dropdown class="dropdown action-show">
+                    <a href="" uib-dropdown-toggle>
                         <i class="zmdi zmdi-more-vert"></i>
                     </a>
 
@@ -750,28 +750,28 @@
             <br/>
 
             <p class="f-500 c-black">Basic Examples</p>
-            <progressbar value="70"></progressbar>
+            <uib-progressbar value="70"></uib-progressbar>
 
             <br/>
 
             <p class="f-500 c-black">Contextual alternatives</p>
-            <progressbar class="m-b-10" value="40" type="info"></progressbar>
-            <progressbar class="m-b-10" value="20" type="success"></progressbar>
-            <progressbar class="m-b-10" value="60" type="warning"></progressbar>
-            <progressbar class="m-b-10" value="80" type="danger"></progressbar>
+            <uib-progressbar class="m-b-10" value="40" type="info"></uib-progressbar>
+            <uib-progressbar class="m-b-10" value="20" type="success"></uib-progressbar>
+            <uib-progressbar class="m-b-10" value="60" type="warning"></uib-progressbar>
+            <uib-progressbar class="m-b-10" value="80" type="danger"></uib-progressbar>
 
             <br/>
 
             <p class="f-500 c-black">Striped Progress bars</p>
-            <progressbar class="progress-striped m-b-10" value="40" type="info"></progressbar>
-            <progressbar class="progress-striped m-b-10" value="20" type="success"></progressbar>
-            <progressbar class="progress-striped m-b-10" value="60" type="warning"></progressbar>
-            <progressbar class="progress-striped m-b-10" value="80" type="danger"></progressbar>
+            <uib-progressbar class="progress-striped m-b-10" value="40" type="info"></uib-progressbar>
+            <uib-progressbar class="progress-striped m-b-10" value="20" type="success"></uib-progressbar>
+            <uib-progressbar class="progress-striped m-b-10" value="60" type="warning"></uib-progressbar>
+            <uib-progressbar class="progress-striped m-b-10" value="80" type="danger"></uib-progressbar>
 
             <br/>
 
             <p class="f-500 c-black">Animated Progress bar (Not in old IEs)</p>
-            <progressbar class="progress-striped active m-b-10" value="65"></progressbar>
+            <uib-progressbar class="progress-striped active m-b-10" value="65"></uib-progressbar>
 
             <br/>
 
@@ -782,15 +782,15 @@
             <br/>
             <br/>
 
-            <progressbar max="max" value="dynamic"></progressbar>
+            <uib-progressbar max="max" value="dynamic"></uib-progressbar>
 
             <br/>
 
             <small><em>No animation</em></small>
-            <progressbar class="m-b-10" animate="false" value="dynamic" type="success"><b>{{dynamic}}%</b></progressbar>
+            <uib-progressbar class="m-b-10" animate="false" value="dynamic" type="success"><b>{{dynamic}}%</b></uib-progressbar>
 
             <small><em>Object (changes type based on value)</em></small>
-            <progressbar class="progress-striped active m-b-10" value="dynamic" type="{{type}}">{{type}} <i ng-show="showWarning">!!! Watch out !!!</i></progressbar>
+            <uib-progressbar class="progress-striped active m-b-10" value="dynamic" type="{{type}}">{{type}} <i ng-show="showWarning">!!! Watch out !!!</i></uib-progressbar>
 
             <br/>
 
@@ -801,7 +801,7 @@
             <br />
             <br/>
 
-            <progress><bar ng-repeat="bar in stacked track by $index" value="bar.value" type="{{bar.type}}"></bar></progress>
+            <uib-progress><uib-bar ng-repeat="bar in stacked track by $index" value="bar.value" type="{{bar.type}}"></uib-bar></uib-progress>
 
         </div>
     </div>
@@ -813,8 +813,8 @@
 
 
             <ul class="actions">
-                <li dropdown class="dropdown action-show">
-                    <a href="" dropdown-toggle>
+                <li uib-dropdown class="dropdown action-show">
+                    <a href="" uib-dropdown-toggle>
                         <i class="zmdi zmdi-more-vert"></i>
                     </a>
 
@@ -831,28 +831,28 @@
 
             <p>Add quick, dynamic tab functionality to transition through panes of local content, even via dropdown menus. <a target="_blank" href="http://angular-ui.github.io/bootstrap/#/tabs">Read more...</a></p>
 
-            <tabset>
-                <tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active" disable="tab.disabled">
+            <uib-tabset>
+                <uib-tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active" disable="tab.disabled">
                   {{tab.content}}
-                </tab>
-            </tabset>
+                </uib-tab>
+            </uib-tabset>
 
             <br/>
 
-            <tabset justified="true">
-                <tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active" disable="tab.disabled">
+            <uib-tabset justified="true">
+                <uib-tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active" disable="tab.disabled">
                   {{tab.content}}
-                </tab>
-            </tabset>
+                </uib-tab>
+            </uib-tabset>
 
             <br/>
             <br/>
 
-            <tabset vertical="true">
-                <tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active" disable="tab.disabled">
+            <uib-tabset vertical="true">
+                <uib-tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active" disable="tab.disabled">
                   {{tab.content}}
-                </tab>
-            </tabset>
+                </uib-tab>
+            </uib-tabset>
 
 
         </div>
@@ -865,8 +865,8 @@
 
 
             <ul class="actions">
-                <li dropdown class="dropdown action-show">
-                    <a href="" dropdown-toggle>
+                <li uib-dropdown class="dropdown action-show">
+                    <a href="" uib-dropdown-toggle>
                         <i class="zmdi zmdi-more-vert"></i>
                     </a>
 
@@ -957,8 +957,8 @@
 
 
             <ul class="actions">
-                <li dropdown class="dropdown action-show">
-                    <a href="" dropdown-toggle>
+                <li uib-dropdown class="dropdown action-show">
+                    <a href="" uib-dropdown-toggle>
                         <i class="zmdi zmdi-more-vert"></i>
                     </a>
 
@@ -986,19 +986,19 @@
             <div class="datepicker-demo">
                 <div class="dd-block">
                     <div class="date-picker">
-                        <datepicker show-weeks="false" ng-model="dtInline" min-date="minDate" class="dp-inline"></datepicker>
+                        <uib-datepicker show-weeks="false" ng-model="dtInline" min-date="minDate" class="dp-inline"></uib-datepicker>
                     </div>
                 </div>
 
                 <div class="dd-block">
                     <div class="date-picker dp-blue">
-                        <datepicker show-weeks="false" ng-model="dtInline2" min-date="minDate" class="dp-inline"></datepicker>
+                        <uib-datepicker show-weeks="false" ng-model="dtInline2" min-date="minDate" class="dp-inline"></uib-datepicker>
                     </div>
                 </div>
 
                 <div class="dd-block">
                     <div class="date-picker dp-red">
-                        <datepicker show-weeks="false" ng-model="dtInline3" min-date="minDate" class="dp-inline"></datepicker>
+                        <uib-datepicker show-weeks="false" ng-model="dtInline3" min-date="minDate" class="dp-inline"></uib-datepicker>
                     </div>
                 </div>
 
@@ -1020,7 +1020,7 @@
                     <div class="date-picker input-group" ng-class="{ 'is-opened': opened == true }">
                         <span class="input-group-addon"><i class="zmdi zmdi-calendar ma-icon"></i></span>
                         <div class="fg-line" ng-class="{ 'fg-toggled': opened == true }">
-                            <input ng-click="open($event, 'opened')" type="text" class="form-control" datepicker-popup="{{format}}" show-weeks="false" ng-model="dtPopup" is-open="opened" min-date="minDate" datepicker-options="dateOptions" ng-required="true" close-text="Close" placeholder="Select Date" />
+                            <input ng-click="open($event, 'opened')" type="text" class="form-control" uib-datepicker-popup="{{format}}" show-weeks="false" ng-model="dtPopup" is-open="opened" min-date="minDate" datepicker-options="dateOptions" ng-required="true" close-text="Close" placeholder="Select Date" />
                         </div>
                     </div>
 
@@ -1031,7 +1031,7 @@
                     <div class="date-picker input-group dp-blue" ng-class="{ 'is-opened': opened2 == true }">
                         <span class="input-group-addon"><i class="zmdi zmdi-calendar ma-icon"></i></span>
                         <div class="fg-line" ng-class="{ 'fg-toggled': opened2 == true }">
-                            <input ng-click="open($event, 'opened2')" type="text" class="form-control" datepicker-popup="{{format}}" show-weeks="false" ng-model="dtPopup2" is-open="opened2" min-date="minDate" datepicker-options="dateOptions" ng-required="true" close-text="Close" placeholder="Select Date" />
+                            <input ng-click="open($event, 'opened2')" type="text" class="form-control" uib-datepicker-popup="{{format}}" show-weeks="false" ng-model="dtPopup2" is-open="opened2" min-date="minDate" datepicker-options="dateOptions" ng-required="true" close-text="Close" placeholder="Select Date" />
                         </div>
                     </div>
 
@@ -1042,7 +1042,7 @@
                     <div class="date-picker input-group dp-red" ng-class="{ 'is-opened': opened3 == true }">
                         <span class="input-group-addon"><i class="zmdi zmdi-calendar ma-icon"></i></span>
                         <div class="fg-line" ng-class="{ 'fg-toggled': opened3 == true }">
-                            <input ng-click="open($event, 'opened3')" type="text" class="form-control" datepicker-popup="{{format}}" show-weeks="false" ng-model="dtPopup3" is-open="opened3" min-date="minDate" datepicker-options="dateOptions" ng-required="true" close-text="Close" placeholder="Select Date" />
+                            <input ng-click="open($event, 'opened3')" type="text" class="form-control" uib-datepicker-popup="{{format}}" show-weeks="false" ng-model="dtPopup3" is-open="opened3" min-date="minDate" datepicker-options="dateOptions" ng-required="true" close-text="Close" placeholder="Select Date" />
                         </div>
                     </div>
 
@@ -1065,7 +1065,7 @@
                     <div class="date-picker input-group dropup" ng-class="{ 'is-opened': opened4 == true }">
                         <span class="input-group-addon"><i class="zmdi zmdi-calendar ma-icon"></i></span>
                         <div class="fg-line" ng-class="{ 'fg-toggled': opened4 == true }">
-                            <input ng-click="open($event, 'opened4')" type="text" class="form-control" datepicker-popup="{{format}}" show-weeks="false" ng-model="dtUp" is-open="opened4" min-date="minDate" datepicker-options="dateOptions" ng-required="true" close-text="Close" placeholder="This is a dropup" />
+                            <input ng-click="open($event, 'opened4')" type="text" class="form-control" uib-datepicker-popup="{{format}}" show-weeks="false" ng-model="dtUp" is-open="opened4" min-date="minDate" datepicker-options="dateOptions" ng-required="true" close-text="Close" placeholder="This is a dropup" />
                         </div>
                     </div>
 
@@ -1076,7 +1076,7 @@
                     <div class="date-picker input-group" ng-class="{ 'is-opened': opened5 == true }">
                         <span class="input-group-addon"><i class="zmdi zmdi-calendar ma-icon"></i></span>
                         <div class="fg-line" ng-class="{ 'fg-toggled': opened5 == true }">
-                            <input ng-click="open($event, 'opened5')" type="text" class="form-control" datepicker-popup="{{format}}" show-weeks="false"  datepicker-mode="'month'" ng-model="dtUp2" is-open="opened5" min-date="minDate" datepicker-options="dateOptions" ng-required="true" close-text="Close" placeholder="Start with Month"/>
+                            <input ng-click="open($event, 'opened5')" type="text" class="form-control" uib-datepicker-popup="{{format}}" show-weeks="false"  datepicker-mode="'month'" ng-model="dtUp2" is-open="opened5" min-date="minDate" datepicker-options="dateOptions" ng-required="true" close-text="Close" placeholder="Start with Month"/>
                         </div>
                     </div>
 
@@ -1087,7 +1087,7 @@
                     <div class="date-picker input-group" ng-class="{ 'is-opened': opened6 == true }">
                         <span class="input-group-addon"><i class="zmdi zmdi-calendar ma-icon"></i></span>
                         <div class="fg-line" ng-class="{ 'fg-toggled': opened6 == true }">
-                            <input ng-click="open($event, 'opened6')" type="text" class="form-control" datepicker-popup="{{format}}" show-weeks="false"  datepicker-mode="'year'" ng-model="dtUp3" is-open="opened6" min-date="minDate" datepicker-options="dateOptions" ng-required="true" close-text="Close" placeholder="Start with Year"/>
+                            <input ng-click="open($event, 'opened6')" type="text" class="form-control" uib-datepicker-popup="{{format}}" show-weeks="false"  datepicker-mode="'year'" ng-model="dtUp3" is-open="opened6" min-date="minDate" datepicker-options="dateOptions" ng-required="true" close-text="Close" placeholder="Start with Year"/>
                         </div>
                     </div>
 
@@ -1103,8 +1103,8 @@
 
 
             <ul class="actions">
-                <li dropdown class="dropdown action-show">
-                    <a href="" dropdown-toggle>
+                <li uib-dropdown class="dropdown action-show">
+                    <a href="" uib-dropdown-toggle>
                         <i class="zmdi zmdi-more-vert"></i>
                     </a>
 
@@ -1132,7 +1132,7 @@
             <div class="row">
                 <div class="col-sm-6">
                     <div class="fg-line">
-                        <input type="text" ng-model="selected" typeahead="state for state in states | filter:$viewValue | limitTo:8" class="form-control" placeholder="e.g. Arizona">
+                        <input type="text" ng-model="selected" uib-typeahead="state for state in states | filter:$viewValue | limitTo:8" class="form-control" placeholder="e.g. Arizona">
                     </div>
                 </div>
             </div>
@@ -1149,7 +1149,7 @@
             <div class="row">
                 <div class="col-sm-6">
                     <div class="fg-line">
-                        <input type="text" ng-model="asyncSelected" placeholder="Locations loaded via $http" typeahead="address for address in getLocation($viewValue)" typeahead-loading="loadingLocations" class="form-control">
+                        <input type="text" ng-model="asyncSelected" placeholder="Locations loaded via $http" uib-typeahead="address for address in getLocation($viewValue)" typeahead-loading="loadingLocations" class="form-control">
                     </div>
                 </div>
             </div>

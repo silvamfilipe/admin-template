@@ -185,6 +185,10 @@ var filePaths = {
             to: config.jsVendor + "/chosen"
         },
         {
+            from: config.bowerDir + "/animate.css/animate*css",
+            to: config.jsVendor + "/animate.css"
+        },
+        {
             from: config.bowerDir + "/angular-chosen-localytics/*s*.*",
             to: config.jsVendor + "/angular-chosen-localytics"
         },
@@ -228,7 +232,7 @@ gulp.task('bower', function () {
 
 // Sass compile task
 gulp.task('css', function () {
-    return gulp.src(config.sassPath + '/styles.scss')
+    return gulp.src([config.sassPath + '/styles.scss', config.sassPath + '/demo.scss'])
      .pipe(sass({
             style: 'compressed',
             loadPath: [

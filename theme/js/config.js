@@ -160,6 +160,7 @@ materialAdmin
                                     'js/vendor/fileinput/fileinput.min.js',
                                     'js/vendor/chosen/chosen.jquery.min.js',
                                     'js/vendor/angular-chosen-localytics/chosen.js',
+                                    'js/vendor/farbtastic/farbtastic.js'
                                 ]
                             }
                         ])
