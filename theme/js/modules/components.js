@@ -172,7 +172,7 @@ materialAdmin
             restrict: 'A',
             link: function(scope, element, attrs) {
                 function notify(from, align, icon, type, animIn, animOut){
-                    $.growl({
+                    $.notify({
                         icon: icon,
                         title: ' Bootstrap Growl ',
                         message: 'Turning standard Bootstrap alerts into awesome notifications',
@@ -191,7 +191,7 @@ materialAdmin
                             },
                             spacing: 10,
                             z_index: 1031,
-                            delay: 2500,
+                            delay: 25000,
                             timer: 1000,
                             url_target: '_blank',
                             mouse_over: false,
@@ -200,16 +200,16 @@ materialAdmin
                                     exit: animOut
                             },
                             icon_type: 'class',
-                            template: '<div data-growl="container" class="alert" role="alert">' +
-                                            '<button type="button" class="close" data-growl="dismiss">' +
-                                                '<span aria-hidden="true">&times;</span>' +
-                                                '<span class="sr-only">Close</span>' +
-                                            '</button>' +
-                                            '<span data-growl="icon"></span>' +
-                                            '<span data-growl="title"></span>' +
-                                            '<span data-growl="message"></span>' +
-                                            '<a href="#" data-growl="url"></a>' +
-                                        '</div>'
+                            template: '<div data-notify="container" class="col-xs-11 col-sm-3 alert alert-{0}" role="alert">' +
+		'<button type="button" aria-hidden="true" class="close" data-notify="dismiss">×</button>' +
+		'<span data-notify="icon"></span> ' +
+		'<strong class="text-strong" data-notify="title">{1}</strong><br>' +
+		'<span data-notify="message">{2}</span>' +
+		'<div class="progress" data-notify="progressbar">' +
+			'<div class="progress-bar progress-bar-{0}" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>' +
+		'</div>' +
+		'<a href="{3}" target="{4}" data-notify="url"></a>' +
+	'</div>'
                     });
                 }
                 

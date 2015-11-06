@@ -261,8 +261,8 @@ materialAdmin
 
     .service('growlService', function(){
         var gs = {};
-       /* gs.growl = function(message, type) {
-            $.growl({
+        gs.growl = function(message, type) {
+            $.notify({
                 message: message
             },{
                 type: type,
@@ -283,7 +283,7 @@ materialAdmin
                     y: 85
                 }
             });
-        } */
+        }
         
         return gs;
     })

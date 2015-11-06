@@ -9884,27 +9884,27 @@ html:not(.ie9) .select {
     padding-right: 44px; }
 
 .alert-inverse {
-  background: fade(#333, 90%);
-  box-shadow: 0 0 5px fade(#333, 50%);
+  background: #333333;
+  box-shadow: 0 0 5px rgba(51, 51, 51, 0.5);
   color: #fff; }
-  .alert-inverse a {
-    color: #fff; }
+  .alert-inverse a, .alert-inverse button {
+    color: #fff !important; }
 
 .growl-animated {
   border: 0;
   color: #fff; }
   .growl-animated.alert-info {
-    background: fade(#2196F3, 80%);
-    box-shadow: 0 0 5px fade(#2196F3, 50%); }
+    background: rgba(33, 150, 243, 0.2);
+    box-shadow: 0 0 5px rgba(33, 150, 243, 0.5); }
   .growl-animated.alert-success {
-    background: fade(#4CAF50, 80%);
-    box-shadow: 0 0 5px fade(#4CAF50, 50%); }
+    background: rgba(76, 175, 80, 0.2);
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); }
   .growl-animated.alert-warning {
-    background: fade(#FF9800, 80%);
-    box-shadow: 0 0 5px fade(#FF9800, 50%); }
+    background: rgba(255, 152, 0, 0.2);
+    box-shadow: 0 0 5px rgba(255, 152, 0, 0.5); }
   .growl-animated.alert-danger {
-    background: fade(#F44336, 80%);
-    box-shadow: 0 0 5px fade(#F44336, 50%); }
+    background: rgba(244, 67, 54, 0.2);
+    box-shadow: 0 0 5px rgba(244, 67, 54, 0.5); }
 
 .thumbnail a:hover,
 .thumbnail a:focus,

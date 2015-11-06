@@ -16,12 +16,12 @@
 }
 
 .alert-inverse {
-    background: fade(#333, 90%);
-    box-shadow: 0 0 5px fade(#333, 50%);
+    background: fade_in(#333, .75);
+    box-shadow: 0 0 5px fade_out(#333, .5);
     color: #fff;
     
-    a {
-        color: #fff;
+    a, button {
+        color: #fff !important;
     }
 }
 
@@ -30,22 +30,22 @@
     color: #fff;
 
     &.alert-info {
-        background: fade($m-blue, 80%);
-        box-shadow: 0 0 5px fade($m-blue, 50%);
+        background: fade_out($m-blue, .8);
+        box-shadow: 0 0 5px fade_out($m-blue, .5);
     }
 
     &.alert-success {
-        background: fade($m-green, 80%);
-        box-shadow: 0 0 5px fade($m-green, 50%);
+        background: fade_out($m-green, .8);
+        box-shadow: 0 0 5px fade_out($m-green, .5);
     }
 
     &.alert-warning {
-        background: fade($m-orange, 80%);
-        box-shadow: 0 0 5px fade($m-orange, 50%);
+        background: fade_out($m-orange, .8);
+        box-shadow: 0 0 5px fade_out($m-orange, .5);
     }
 
     &.alert-danger {
-        background: fade($m-red, 80%);
-        box-shadow: 0 0 5px fade($m-red, 50%);
+        background: fade_out($m-red, .8);
+        box-shadow: 0 0 5px fade_out($m-red, .5);
     }
 }
